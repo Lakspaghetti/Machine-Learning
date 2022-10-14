@@ -55,6 +55,7 @@ class GTSRBTrafficSigns(Dataset):
         image = transforms.ColorJitter(0.8, contrast = 0.4)(image)
         if label in [11, 12, 13, 17, 18, 26, 30, 35]:
           image = transforms.RandomHorizontalFlip(p=0.5)(image)
+        image = transforms.ElasticTransform(alpha=250.0)(image)
       else:
         image = transforms.CenterCrop((self.img_width_crop, self.img_height_crop))(image)
 

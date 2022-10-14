@@ -2,5 +2,6 @@
 *.csv
 *.png
 *.pth
+*.txt
 /mnt/c/Users/mikke/Desktop/ML/Code/A5/Question 2/data
 /mnt/c/Users/mikke/Desktop/ML/Code/A5/Question 2/cifar_net.pth
